@@ -1,0 +1,10 @@
+<div class="contents row">
+  <% @spots.each do |spot| %>
+     <%= image_tag message.image, class: 'message-image' %>
+      <p><%= spot.text %></p>
+      <span class="name">
+        <%= spot.name %>
+      </span>
+    </div>
+  <% end %>
+</div>

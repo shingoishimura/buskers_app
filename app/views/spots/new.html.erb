@@ -1,0 +1,15 @@
+<div class="contents row">
+  <div class="container">
+    <h3>投稿する</h3>
+    <%= form_with(model: @spot, local: true) do |form| %>
+      <%= form.text_field :name, placeholder: "Name" %>
+      <%= form.text_field :image, placeholder: "Image Url" %>
+      <%= form.text_field :county, placeholder: "Country" %>
+      <%= form.text_field :state, placeholder: "State" %>
+      <%= form.text_field :city, placeholder: "City" %>
+      <%= form.text_field :street, placeholder: "Street" %>
+      <%= form.text_area :other, placeholder: "text", rows: "10" %>
+      <%= form.submit "SEND" %>
+    <% end %>
+  </div>
+</div>
