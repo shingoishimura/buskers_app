@@ -1,0 +1,2 @@
+class Busker < ApplicationRecord
+end
