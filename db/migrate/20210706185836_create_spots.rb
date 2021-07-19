@@ -6,6 +6,7 @@ class CreateSpots < ActiveRecord::Migration[6.0]
       t.string :state
       t.string :city
       t.string :street
+      t.string :power_supply
       t.text :other
       t.timestamps
     end

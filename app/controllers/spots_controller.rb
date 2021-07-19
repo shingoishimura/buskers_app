@@ -8,6 +8,12 @@ class SpotsController < ApplicationController
   def new
     @spot = Spot.new
   end
+
+  def create
+    @order = Spot.new(spot_params)
+  
+  end
+  
  
   private
 
